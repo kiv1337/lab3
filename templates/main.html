@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+  <title>kiv</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #24252a;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 80px purple;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <div class="container">
+        <div>
+            <h2>Пользователь</h2>
+            <p><strong>Имя пользователя:</strong> {{ user.username }}</p>
+            <p><strong>Пароль:</strong> {{ user.password }}</p>
+            <p style="color:green;">Успешный вход!</p>
+            <a href="/logout" class="btn">Выйти</a>
+        </div>
+    </div>
+</body>
+</html>
